@@ -6,13 +6,14 @@ function Movie(props){
     return(
     <Link 
         to={{
-            pathname: "/movie-detail",
+            pathname: `/movie/${props.id}`,
             state: {
                 year:props.year,
                 title:props.title,
                 summary:props.summary,
                 poster:props.poster,
-                genres:props.genres
+                genres:props.genres,
+                id:props.id
             },
         }}
     >
